@@ -1,0 +1,838 @@
+local APT = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TimeLength = Instance.new("TextLabel")
+local IsLoaded = Instance.new("TextLabel")
+local PlaybackLoudness = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local EqualTo = Instance.new("ImageLabel")
+local More = Instance.new("ImageButton")
+local Frame_2 = Instance.new("Frame")
+local fzi = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local c = Instance.new("TextButton")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local feag = Instance.new("TextButton")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local pasd = Instance.new("TextButton")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+
+APT.Name = "APT"
+APT.Parent = game.Players.LocalPlayer.PlayerGui
+APT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = APT
+Frame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Frame.BackgroundTransparency = 0.300
+Frame.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame.Position = UDim2.new(0.838509321, 0, 0.360317439, 0)
+Frame.Size = UDim2.new(0.149439588, 0, 0.279231638, 0)
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextBox.BackgroundTransparency = 0.300
+TextBox.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextBox.Position = UDim2.new(0.0799999982, 0, 0.204285726, 0)
+TextBox.Size = UDim2.new(0.835414112, 0, 0.114285715, 0)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.Roboto
+TextBox.PlaceholderText = "Enter ID..."
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+TimeLength.Name = "TimeLength"
+TimeLength.Parent = TextBox
+TimeLength.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TimeLength.BorderColor3 = Color3.fromRGB(124, 124, 124)
+TimeLength.Position = UDim2.new(-0.0500000007, 0, 2.20000005, 0)
+TimeLength.Size = UDim2.new(1.10000002, 0, 1.25, 0)
+TimeLength.Font = Enum.Font.Roboto
+TimeLength.Text = "TimeLength"
+TimeLength.TextColor3 = Color3.fromRGB(255, 255, 255)
+TimeLength.TextSize = 14.000
+TimeLength.TextWrapped = true
+
+IsLoaded.Name = "IsLoaded"
+IsLoaded.Parent = TextBox
+IsLoaded.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+IsLoaded.BorderColor3 = Color3.fromRGB(124, 124, 124)
+IsLoaded.Position = UDim2.new(-0.0500000007, 0, 5.4000001, 0)
+IsLoaded.Size = UDim2.new(1.10000002, 0, 1.25, 0)
+IsLoaded.Font = Enum.Font.Gotham
+IsLoaded.Text = "IsLoaded"
+IsLoaded.TextColor3 = Color3.fromRGB(255, 255, 255)
+IsLoaded.TextSize = 14.000
+IsLoaded.TextWrapped = true
+
+PlaybackLoudness.Name = "PlaybackLoudness"
+PlaybackLoudness.Parent = TextBox
+PlaybackLoudness.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+PlaybackLoudness.BorderColor3 = Color3.fromRGB(124, 124, 124)
+PlaybackLoudness.Position = UDim2.new(-0.0500000007, 0, 3.79999995, 0)
+PlaybackLoudness.Size = UDim2.new(1.10000002, 0, 1.25, 0)
+PlaybackLoudness.Font = Enum.Font.Roboto
+PlaybackLoudness.Text = "PlaybackLoudness"
+PlaybackLoudness.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlaybackLoudness.TextSize = 14.000
+PlaybackLoudness.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0799999982, 0, 0.0350000001, 0)
+Title.Size = UDim2.new(0.835414112, 0, 0.142857149, 0)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "Audio Properties Teller"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextStrokeTransparency = 0.000
+Title.TextWrapped = true
+
+EqualTo.Name = "EqualTo"
+EqualTo.Parent = Frame
+EqualTo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EqualTo.BackgroundTransparency = 1.000
+EqualTo.Position = UDim2.new(0.408666492, 0, 0.323571414, 0)
+EqualTo.Size = UDim2.new(0.167082816, 0, 0.125714287, 0)
+EqualTo.Image = "rbxassetid://188220132"
+
+More.Name = "More"
+More.Parent = Frame
+More.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+More.BackgroundTransparency = 1.000
+More.Position = UDim2.new(0, 0, -0.129999995, 0)
+More.Size = UDim2.new(0, 20, 0, 20)
+More.Image = "rbxassetid://5107175347"
+More.ImageColor3 = Color3.fromRGB(30, 30, 30)
+
+Frame_2.Parent = More
+Frame_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Frame_2.BackgroundTransparency = 0.300
+Frame_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame_2.Position = UDim2.new(-6.5, 0, 1.14999998, 0)
+Frame_2.Size = UDim2.new(5.9000001, 0, 8.75, 0)
+Frame_2.Visible = false
+
+fzi.Name = "fzi"
+fzi.Parent = Frame_2
+fzi.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+fzi.BackgroundTransparency = 0.300
+fzi.BorderColor3 = Color3.fromRGB(30, 30, 30)
+fzi.Size = UDim2.new(0.998304844, 0, 0.147142857, 0)
+fzi.Font = Enum.Font.Gotham
+fzi.Text = ""
+fzi.TextColor3 = Color3.fromRGB(0, 0, 0)
+fzi.TextSize = 14.000
+fzi.TextTransparency = 1.000
+
+ImageLabel.Parent = fzi
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Size = UDim2.new(0, 25, 0, 26)
+ImageLabel.Image = "rbxassetid://9695309046"
+
+TextLabel.Parent = fzi
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.229779467, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 85, 0, 26)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = " Full ZIndex"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+UIListLayout.Parent = Frame_2
+
+c.Name = "c"
+c.Parent = Frame_2
+c.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+c.BackgroundTransparency = 0.300
+c.BorderColor3 = Color3.fromRGB(30, 30, 30)
+c.Size = UDim2.new(0.998304844, 0, 0.147142857, 0)
+c.Font = Enum.Font.Gotham
+c.Text = ""
+c.TextColor3 = Color3.fromRGB(0, 0, 0)
+c.TextSize = 14.000
+c.TextTransparency = 1.000
+
+ImageLabel_2.Parent = c
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Size = UDim2.new(0, 25, 0, 26)
+ImageLabel_2.Image = "rbxassetid://7436812392"
+
+TextLabel_2.Parent = c
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.229779467, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 85, 0, 26)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = " Close"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+feag.Name = "feag"
+feag.Parent = Frame_2
+feag.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+feag.BackgroundTransparency = 0.300
+feag.BorderColor3 = Color3.fromRGB(30, 30, 30)
+feag.Size = UDim2.new(0.998304844, 0, 0.147142857, 0)
+feag.Font = Enum.Font.Gotham
+feag.Text = ""
+feag.TextColor3 = Color3.fromRGB(0, 0, 0)
+feag.TextSize = 14.000
+feag.TextTransparency = 1.000
+
+ImageLabel_3.Parent = feag
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.Size = UDim2.new(0, 25, 0, 26)
+ImageLabel_3.Image = "rbxassetid://4728126418"
+
+TextLabel_3.Parent = feag
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.229779467, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 85, 0, 26)
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = " Audio GUI"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+pasd.Name = "pasd"
+pasd.Parent = Frame_2
+pasd.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+pasd.BackgroundTransparency = 0.300
+pasd.BorderColor3 = Color3.fromRGB(30, 30, 30)
+pasd.Size = UDim2.new(0.998304844, 0, 0.147142857, 0)
+pasd.Font = Enum.Font.Gotham
+pasd.Text = ""
+pasd.TextColor3 = Color3.fromRGB(0, 0, 0)
+pasd.TextSize = 14.000
+pasd.TextTransparency = 1.000
+
+ImageLabel_4.Parent = pasd
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.Size = UDim2.new(0, 25, 0, 26)
+ImageLabel_4.Image = "rbxassetid://6296233560"
+
+TextLabel_4.Parent = pasd
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.229779467, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 85, 0, 26)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = " Play all DSI"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+local function KDPGS()
+	local script = Instance.new('LocalScript', TimeLength)
+
+	local textBox = script.Parent.Parent
+	local textLabel = script.Parent
+	local prefix = "rbxassetid://"
+	local waitTime = math.random() * 5
+	
+	local function IsNumeric(str)
+		return tonumber(str) ~= nil
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local text = textBox.Text
+		local newText = ""
+		for i = 1, #text do
+			if IsNumeric(string.sub(text, i, i)) then
+				newText = newText .. string.sub(text, i, i)
+			end
+		end
+		if #newText > 11 then
+			newText = string.sub(newText, 1, 11)
+		end
+		textBox.Text = newText
+	end)
+	
+	local function OnTextBoxEnter(textBox, func)
+		textBox.FocusLost:Connect(function(enterPressed)
+			if enterPressed then
+				local num = tonumber(textBox.Text)
+				if num then
+					func(num)
+				end
+			end
+		end)
+	end
+	
+	OnTextBoxEnter(textBox, function(num)
+		local audio = game.ReplicatedFirst:WaitForChild("GENERATED_iD")
+		
+		audio.SoundId = prefix..textBox.Text
+		wait(1)
+		script.Parent.Text = audio.TimeLength
+		wait(3)
+		script.Parent.Text = "TimeLength"
+	end)
+end
+coroutine.wrap(KDPGS)()
+local function YSXKW()
+	local script = Instance.new('LocalScript', IsLoaded)
+
+	local textBox = script.Parent.Parent
+	local textLabel = script.Parent
+	local prefix = "rbxassetid://"
+	local waitTime = math.random() * 5
+	
+	local work = Instance.new("Sound",game.ReplicatedFirst)
+	work.Volume = .5
+	work.Name = "kantaTRUE"
+	work.Looped = false
+	work.SoundId = "rbxassetid://3779053277"
+	
+	local notwork = Instance.new("Sound",game.ReplicatedFirst)
+	notwork.Volume = .5
+	notwork.Name = "kantaFALSE"
+	notwork.Looped = false
+	notwork.SoundId = "rbxassetid://3779045779"
+	
+	local function IsNumeric(str)
+		return tonumber(str) ~= nil
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local text = textBox.Text
+		local newText = ""
+		for i = 1, #text do
+			if IsNumeric(string.sub(text, i, i)) then
+				newText = newText .. string.sub(text, i, i)
+			end
+		end
+		if #newText > 11 then
+			newText = string.sub(newText, 1, 11)
+		end
+		textBox.Text = newText
+	end)
+	
+	local function OnTextBoxEnter(textBox, func)
+		textBox.FocusLost:Connect(function(enterPressed)
+			if enterPressed then
+				local num = tonumber(textBox.Text)
+				if num then
+					func(num)
+				end
+			end
+		end)
+	end
+	
+	OnTextBoxEnter(textBox, function(num)
+		local audio = Instance.new("Sound",game.ReplicatedFirst)
+		audio.SoundId = prefix..textBox.Text
+		audio.Name = "GENERATED_iD"
+		wait(1)
+		if audio.IsLoaded == false then
+			script.Parent.Text = "Unplayable"
+			script.Parent.BorderColor3 = Color3.fromRGB(255, 0, 0)
+			notwork:Play()
+			wait(3)
+			script.Parent.Text = "IsLoaded"
+			script.Parent.BorderColor3 = Color3.fromRGB(124, 124, 124)
+			audio:Destroy()
+		elseif audio.IsLoaded == true then
+			script.Parent.Text = "Playable"
+			script.Parent.BorderColor3 = Color3.fromRGB(0, 255, 0)
+			work:Play()
+			wait(3)
+			script.Parent.Text = "IsLoaded"
+			script.Parent.BorderColor3 = Color3.fromRGB(124, 124, 124)
+			audio:Destroy()
+		end
+	end)
+end
+coroutine.wrap(YSXKW)()
+local function UPWF()
+	local script = Instance.new('LocalScript', PlaybackLoudness)
+
+	local textBox = script.Parent.Parent
+	local textLabel = script.Parent
+	local prefix = "rbxassetid://"
+	local waitTime = math.random() * 5
+	
+	local function IsNumeric(str)
+		return tonumber(str) ~= nil
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local text = textBox.Text
+		local newText = ""
+		for i = 1, #text do
+			if IsNumeric(string.sub(text, i, i)) then
+				newText = newText .. string.sub(text, i, i)
+			end
+		end
+		if #newText > 11 then
+			newText = string.sub(newText, 1, 11)
+		end
+		textBox.Text = newText
+	end)
+	
+	local function OnTextBoxEnter(textBox, func)
+		textBox.FocusLost:Connect(function(enterPressed)
+			if enterPressed then
+				local num = tonumber(textBox.Text)
+				if num then
+					func(num)
+				end
+			end
+		end)
+	end
+	
+	OnTextBoxEnter(textBox, function(num)
+		local audio = game.ReplicatedFirst:WaitForChild("GENERATED_iD")
+		
+		audio.SoundId = prefix..textBox.Text
+		wait(1)
+		script.Parent.Text = audio.PlaybackLoudness
+		wait(3)
+		script.Parent.Text = "PlaybackLoudness"
+	end)
+end
+coroutine.wrap(UPWF)()
+local function JPKLLEG()
+	local script = Instance.new('LocalScript', fzi)
+
+	local eabled = false
+	script.Parent.MouseButton1Down:Connect(function()
+		if eabled == false then
+			eabled = true
+			game.Players.LocalPlayer.PlayerGui.APT.Parent = game.CoreGui
+			script.Parent.TextLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			eabled = false
+			game.CoreGui.APT.Parent = game.Players.LocalPlayer.PlayerGui
+			script.Parent.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		end
+	end)
+end
+coroutine.wrap(JPKLLEG)()
+local function CYEW()
+	local script = Instance.new('LocalScript', c)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(CYEW)()
+local function IHIMM()
+	local script = Instance.new('LocalScript', feag)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local ScreenGui = Instance.new("ScreenGui")
+		local Draggable = Instance.new("Frame")
+		local Frame = Instance.new("Frame")
+		local Frame_2 = Instance.new("Frame")
+		local Time = Instance.new("TextLabel")
+		local _1E = Instance.new("TextButton")
+		local UICorner = Instance.new("UICorner")
+		local _3E = Instance.new("TextButton")
+		local UICorner_2 = Instance.new("UICorner")
+		local SE = Instance.new("TextButton")
+		local UICorner_3 = Instance.new("UICorner")
+		local Path = Instance.new("TextLabel")
+		local Top = Instance.new("Frame")
+		local Top_2 = Instance.new("Frame")
+		local ImageLabel = Instance.new("ImageLabel")
+		local TextLabel = Instance.new("TextLabel")
+		local Exit = Instance.new("TextButton")
+		local Minizum = Instance.new("TextButton")
+		local Stop = Instance.new("TextButton")
+		local UICorner_4 = Instance.new("UICorner")
+		local IY = Instance.new("TextButton")
+		local UICorner_5 = Instance.new("UICorner")
+		local TextLabel_2 = Instance.new("TextLabel")
+		local Wait = Instance.new("TextBox")
+	
+		ScreenGui.Name = "AudioGui"
+		ScreenGui.Parent = game:GetService("CoreGui")
+		ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+		ScreenGui.ResetOnSpawn = false
+	
+		Draggable.Name = "dragg"
+		Draggable.Parent = ScreenGui
+		Draggable.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Draggable.BackgroundTransparency = 1.000
+		Draggable.BorderSizePixel = 0
+		Draggable.Position = UDim2.new(0.35026139, 0, 0.296158612, 0)
+		Draggable.Size = UDim2.new(0, 438, 0, 277)
+	
+		Frame.Name = "frame"
+		Frame.Parent = Draggable
+		Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Frame.BackgroundTransparency = 1.000
+		Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		Frame.BorderSizePixel = 0
+		Frame.Position = UDim2.new(-0.00133678317, 0, -0.00348037481, 0)
+		Frame.Size = UDim2.new(0, 438, 0, 277)
+	
+		Frame_2.Name = "frame_2"
+		Frame_2.Parent = Frame
+		Frame_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		Frame_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		Frame_2.BorderSizePixel = 0
+		Frame_2.Position = UDim2.new(-0.00133678142, 0, -0.0179207586, 0)
+		Frame_2.Size = UDim2.new(0, 438, 0, 238)
+		Frame_2.Active = true
+		Frame_2.Draggable = true
+	
+		Time.Name = "Time"
+		Time.Parent = Frame_2
+		Time.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Time.BackgroundTransparency = 1.000
+		Time.Position = UDim2.new(0, 0, 0.0126050422, 0)
+		Time.Size = UDim2.new(0, 437, 0, 31)
+		Time.Font = Enum.Font.GothamSemibold
+		Time.Text = "Client or Server..."
+		Time.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Time.TextScaled = true
+		Time.TextSize = 14.000
+		Time.TextWrapped = true
+	
+		_1E.Name = "1E"
+		_1E.Parent = Frame_2
+		_1E.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+		_1E.BorderSizePixel = 0
+		_1E.Position = UDim2.new(0.0182648394, 0, 0.676470578, 0)
+		_1E.Size = UDim2.new(0, 208, 0, 33)
+		_1E.Font = Enum.Font.SourceSans
+		_1E.Text = "Mute Game"
+		_1E.TextColor3 = Color3.fromRGB(255, 255, 255)
+		_1E.TextScaled = true
+		_1E.TextSize = 30.000
+		_1E.TextWrapped = true
+	
+		UICorner.Parent = _1E
+	
+		_3E.Name = "3E"
+		_3E.Parent = Frame_2
+		_3E.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+		_3E.BorderSizePixel = 0
+		_3E.Position = UDim2.new(0.0159817357, 0, 0.142857149, 0)
+		_3E.Size = UDim2.new(0, 209, 0, 33)
+		_3E.Font = Enum.Font.SourceSans
+		_3E.Text = "Annoying  Sound"
+		_3E.TextColor3 = Color3.fromRGB(255, 255, 255)
+		_3E.TextSize = 30.000
+		_3E.TextWrapped = true
+	
+		UICorner_2.Parent = _3E
+	
+		SE.Name = "SE"
+		SE.Parent = Frame_2
+		SE.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+		SE.BorderSizePixel = 0
+		SE.Position = UDim2.new(0.509132445, 0, 0.142857149, 0)
+		SE.Size = UDim2.new(0, 209, 0, 33)
+		SE.Font = Enum.Font.SourceSans
+		SE.Text = "Kill Sound Service"
+		SE.TextColor3 = Color3.fromRGB(255, 255, 255)
+		SE.TextSize = 30.000
+		SE.TextWrapped = true
+	
+		UICorner_3.Parent = SE
+	
+		Path.Name = "Path"
+		Path.Parent = Frame_2
+		Path.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		Path.BackgroundTransparency = 1.000
+		Path.Position = UDim2.new(0.00684931502, 0, 0.815126061, 0)
+		Path.Size = UDim2.new(0, 435, 0, 44)
+		Path.Font = Enum.Font.GothamSemibold
+		Path.Text = "If the text label is red, you will only be able to hear the glitched sound and not others, else if the text label is green, all players will be able to hear the glitched sound."
+		Path.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Path.TextScaled = true
+		Path.TextSize = 14.000
+		Path.TextWrapped = true
+	
+		Top.Name = "Top"
+		Top.Parent = Frame_2
+		Top.BackgroundColor3 = Color3.fromRGB(41, 60, 157)
+		Top.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		Top.BorderSizePixel = 0
+		Top.Position = UDim2.new(-0.00133678142, 0, -0.128059402, 0)
+		Top.Size = UDim2.new(0, 438, 0, 30)
+		Top_2.Name = "Top"
+		Top_2.Parent = Top
+		Top_2.BackgroundColor3 = Color3.fromRGB(30, 45, 118)
+		Top_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		Top_2.BorderSizePixel = 0
+		Top_2.Position = UDim2.new(0, 0, 0.967638671, 0)
+		Top_2.Size = UDim2.new(0, 438, 0, 5)
+	
+		ImageLabel.Parent = Top
+		ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ImageLabel.BackgroundTransparency = 1.000
+		ImageLabel.Position = UDim2.new(0, 0, 0.0666666701, 0)
+		ImageLabel.Size = UDim2.new(0, 29, 0, 27)
+		ImageLabel.Image = "http://www.roblox.com/asset/?id=8798286232"
+	
+		TextLabel.Parent = ImageLabel
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.BackgroundTransparency = 1.000
+		TextLabel.Position = UDim2.new(0.997245014, 0, 0, 0)
+		TextLabel.Size = UDim2.new(0, 397, 0, 30)
+		TextLabel.Font = Enum.Font.GothamSemibold
+		TextLabel.Text = "FEAG"
+		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.TextScaled = true
+		TextLabel.TextSize = 14.000
+		TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.TextWrapped = true
+	
+		Exit.Name = "Exit"
+		Exit.Parent = Top
+		Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Exit.BackgroundTransparency = 1.000
+		Exit.Position = UDim2.new(0.924657524, 0, 0, 0)
+		Exit.Size = UDim2.new(0, 32, 0, 25)
+		Exit.Font = Enum.Font.GothamSemibold
+		Exit.Text = "x"
+		Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Exit.TextScaled = true
+		Exit.TextSize = 14.000
+		Exit.TextWrapped = true
+	
+		Minizum.Name = "Minizum"
+		Minizum.Parent = Top
+		Minizum.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Minizum.BackgroundTransparency = 1.000
+		Minizum.Position = UDim2.new(0.851598203, 0, 0, 0)
+		Minizum.Size = UDim2.new(0, 32, 0, 23)
+		Minizum.Font = Enum.Font.GothamSemibold
+		Minizum.Text = "_"
+		Minizum.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Minizum.TextScaled = true
+		Minizum.TextSize = 14.000
+		Minizum.TextWrapped = true
+	
+		Stop.Name = "Stop"
+		Stop.Parent = Frame_2
+		Stop.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+		Stop.BorderSizePixel = 0
+		Stop.Position = UDim2.new(0.0182648394, 0, 0.310924381, 0)
+		Stop.Size = UDim2.new(0, 424, 0, 33)
+		Stop.Font = Enum.Font.SourceSans
+		Stop.Text = "Stop"
+		Stop.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Stop.TextSize = 30.000
+		Stop.TextWrapped = true
+	
+		UICorner_4.Parent = Stop
+	
+		IY.Name = "IY"
+		IY.Parent = Frame_2
+		IY.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+		IY.BorderSizePixel = 0
+		IY.Position = UDim2.new(0.509132445, 0, 0.676470578, 0)
+		IY.Size = UDim2.new(0, 209, 0, 33)
+		IY.Font = Enum.Font.SourceSans
+		IY.Text = "Unmute Game"
+		IY.TextColor3 = Color3.fromRGB(255, 255, 255)
+		IY.TextScaled = true
+		IY.TextSize = 30.000
+		IY.TextWrapped = true
+	
+		UICorner_5.Parent = IY
+	
+		TextLabel_2.Parent = Frame_2
+		TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.BackgroundTransparency = 1.000
+		TextLabel_2.Position = UDim2.new(0.0182648394, 0, 0.466386557, 0)
+		TextLabel_2.Size = UDim2.new(0, 426, 0, 50)
+		TextLabel_2.Font = Enum.Font.GothamSemibold
+		TextLabel_2.Text = "Wait Speed       :"
+		TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.TextSize = 30.000
+		TextLabel_2.TextWrapped = true
+		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+	
+		Wait.Name = "Wait()"
+		Wait.Parent = Frame_2
+		Wait.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Wait.BackgroundTransparency = 1.000
+		Wait.Position = UDim2.new(0.531963468, 0, 0.466386557, 0)
+		Wait.Size = UDim2.new(0, 199, 0, 50)
+		Wait.ZIndex = 99999
+		Wait.ClearTextOnFocus = false
+		Wait.Font = Enum.Font.GothamSemibold
+		Wait.Text = "0.5"
+		Wait.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Wait.TextSize = 30.000
+		Wait.TextWrapped = true
+	
+		local notification = Instance.new("Sound")
+		notification.Parent = game:GetService("SoundService")
+		notification.SoundId = "rbxassetid://9086208751"
+		notification.Volume = 5
+		notification.Name = "supportexecuted"
+	
+		Exit.MouseButton1Click:Connect(function()
+			ScreenGui:Destroy()
+		end)
+		local Mute = false
+		IY.MouseButton1Click:Connect(function()
+			Mute = false
+		end)
+	
+		_1E.MouseButton1Click:Connect(function()
+			Mute = true
+			while Mute == true do 
+				wait()
+				for _, sound in next, workspace:GetDescendants() do
+					if sound:IsA("Sound") then
+						sound:Stop()
+					end
+				end
+			end
+		end)
+	
+		_3E.MouseButton1Click:Connect(function()
+			for _, sound in next, workspace:GetDescendants() do
+				if sound:IsA("Sound") then
+					sound:Play()
+				end
+			end
+		end)
+	
+		local Active = true
+		SE.MouseButton1Click:Connect(function()
+			Active = true
+			while Active == true do
+				local StringValue = Wait.Text
+				wait(StringValue)
+				for _, sound in next, workspace:GetDescendants() do
+					if sound:IsA("Sound") then
+						sound:Play()
+					end
+				end
+			end
+		end)
+	
+		Stop.MouseButton1Click:Connect(function()
+			Active = false
+		end)
+		notification:Play()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Audio GUI";
+			Text = "-Has Been Loaded-";
+			Icon = "";
+			Duration = 4; 
+			Button1 = "Ok";
+		})
+		while true do
+			wait(0.5)
+			local setting = game:GetService("SoundService").RespectFilteringEnabled
+			if setting == true then
+				Time.TextColor = BrickColor.new(255,0,0)
+				Time.Text = "Client, only you can hear it!"
+			elseif setting == false then
+				Time.Text = "Server, all players can hear it!"
+				Time.TextColor = BrickColor.new(0,255,0)
+			end
+		end
+	end)
+end
+coroutine.wrap(IHIMM)()
+local function SUZHU()
+	local script = Instance.new('LocalScript', pasd)
+
+	local soundToggle = script.Parent
+	local soundEnabled = false
+	local soundInstances = {}
+	
+	local function findSounds()
+		soundInstances = {}
+		local sounds = game:GetDescendants()
+		for _, sound in ipairs(sounds) do
+			if sound:IsA("Sound") then
+				table.insert(soundInstances, sound)
+			end
+		end
+	end
+	
+	local function playSounds()
+		for _, sound in ipairs(soundInstances) do
+			sound:Play()
+		end
+	end
+	
+	local function stopSounds()
+		for _, sound in ipairs(soundInstances) do
+			sound:Stop()
+		end
+	end
+	
+	findSounds()
+	
+	soundToggle.MouseButton1Click:Connect(function()
+		soundEnabled = not soundEnabled
+		if soundEnabled then
+			soundToggle.Text = " Playing"
+			
+			playSounds()
+		else
+			soundToggle.Text = " Play all DSI"
+	
+			stopSounds()
+		end
+	end)
+	
+	game.DescendantAdded:Connect(function(descendant)
+		if descendant:IsA("Sound") then
+			table.insert(soundInstances, descendant)
+		end
+	end)
+	game.DescendantRemoving:Connect(function(descendant)
+		if descendant:IsA("Sound") then
+			for i, sound in ipairs(soundInstances) do
+				if sound == descendant then
+					table.remove(soundInstances, i)
+					break
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(SUZHU)()
+local function ENPV()
+	local script = Instance.new('LocalScript', More)
+
+	local eabled = false 
+	script.Parent.MouseButton1Down:Connect(function()
+		if eabled == false then
+			eabled = true
+			script.Parent.Frame.Visible = true
+			script.Parent.ImageColor3 = Color3.fromRGB(255, 255, 255)
+		else
+			eabled = false
+			script.Parent.Frame.Visible = false
+			script.Parent.ImageColor3 = Color3.fromRGB(30, 30, 30)
+		end
+	end)
+end
+coroutine.wrap(ENPV)()
